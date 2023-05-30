@@ -130,6 +130,7 @@ if (localStorage.getItem('shopingIf') != null) {
 function addProductToShoppingCartLocalStorage() {
   let itemCart = '';
   for (let i = 0; i < arrShopping.length; i++) {
+    console.log(arrShopping[i].img);
   itemCart += `
   <div class="items flex items-center justify-between border border-b-slate-600 border-x-0 border-t-0 px-3 py-6 max-[768px]:flex-col max-[768px]:gap-6">
     <div class="info-product flex gap-4 basis-2/5  max-[768px]:w-full">
