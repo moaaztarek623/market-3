@@ -1,0 +1,137 @@
+{
+  
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "iphone xs max 2019",
+          "price": 320,
+          "numOfStar": 3,
+          "image": { "fields": { "file": { "url": "./images/phone-01.jpg" } } },
+          "anyImage": ["./images/phone-02.jpg", "./images/phone-03.jpg", "./images/phone-05.jpg", "./images/phone-05.jpg"],
+          "size": 128,
+          "ram": 12
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "iphone 13 pro max 2022",
+          "price": 250,
+          "numOfStar": 4,
+          "image": { "fields": { "file": { "url": "./images/phone-02.jpg" } } },
+          "anyImage": ["./images/phone-02.jpg", "./images/phone-03.jpg", "./images/phone-04.jpg", "./images/phone-05.jpg"],
+          "size": 256,
+          "ram": 24
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "samsung s10 plus 2020",
+          "price": 320,
+          "numOfStar": 5,
+          "image": { "fields": { "file": { "url": "./images/phone-03.jpg" } } },
+          "anyImage": ["./images/phone-02.jpg", "./images/phone-03.jpg", "./images/phone-04.jpg", "./images/phone-05.jpg"],
+          "size": 128,
+          "ram": 12
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "iphone 14 pro 2023",
+          "price": 400,
+          "numOfStar": 4,
+          "image": { "fields": { "file": { "url": "./images/phone-04.jpg" } } },
+          "anyImage": ["./images/phone-02.jpg", "./images/phone-03.jpg", "./images/phone-04.jpg", "./images/phone-05.jpg"],
+          "size": 512,
+          "ram": 8
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "iphone 15 pro 2024",
+          "price": 220.99,
+          "numOfStar": 2,
+          "image": { "fields": { "file": { "url": "./images/phone-05.jpg" } } },
+          "anyImage": ["./images/phone-02.jpg", "./images/phone-03.jpg", "./images/phone-04.jpg", "./images/phone-05.jpg"],
+          "size": 64,
+          "ram": 4
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "oppo f12 2018",
+          "price": 200.99,
+          "numOfStar": 5,
+          "image": { "fields": { "file": { "url": "./images/phone-06.jpg" } } },
+          "anyImage": ["./images/phone-02.jpg", "./images/phone-03.jpg", "./images/phone-04.jpg", "./images/phone-05.jpg"],
+          "size": 128,
+          "ram": 12
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "samsung s23 ultra",
+          "numOfStar": 5,
+          "price": 599.99,
+          "image": { "fields": { "file": { "url": "./images/phone-07.jpg" } } },
+          "anyImage": ["./images/phone-02.jpg", "./images/phone-03.jpg", "./images/phone-04.jpg", "./images/phone-05.jpg"],
+          "size": 128,
+          "ram": 12
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "samsung s23 ultra",
+          "price": 440.99,
+          "numOfStar": 4,
+          "image": { "fields": { "file": { "url": "./images/phone-08.jpg" } } },
+          "anyImage": ["./images/phone-02.jpg", "./images/phone-03.jpg", "./images/phone-04.jpg", "./images/phone-05.jpg"],
+          "size": 128,
+          "ram": 12
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "samsung note 10 plus",
+          "price": 400.99,
+          "numOfStar": 4,
+          "image": { "fields": { "file": { "url": "./images/phone-09.jpg" } } },
+          "anyImage": ["./images/phone-02.jpg", "./images/phone-03.jpg", "./images/phone-04.jpg", "./images/phone-05.jpg"],
+          "size": 128,
+          "ram": 12
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "hawawi 5 2017",
+          "price": 300.99,
+          "numOfStar": 3,
+          "image": { "fields": { "file": { "url": "./images/phone-10.jpg" } } },
+          "anyImage": ["./images/phone-02.jpg", "./images/phone-03.jpg", "./images/phone-04.jpg", "./images/phone-05.jpg"],
+          "size": 128,
+          "ram": 12
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "realme 10 pro",
+          "price": 230.99,
+          "numOfStar": 2,
+          "image": { "fields": { "file": { "url": "./images/phone-11.jpg" } } },
+          "anyImage": ["./images/phone-01.jpg", "./images/phone-06.jpg", "./images/phone-08.jpg", "./images/phone-09.jpg", "./images/phone-02.jpg"],
+          "size": 128,
+          "ram": 12
+        }
+      }
+    ]
+  }

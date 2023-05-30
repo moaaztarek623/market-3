@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="https://www.tailwindcss-animated.com/configurator.html?animation=shake&count=infinite">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Products</title>
+</head> 
+<body class="products">
+    <div class="parentLoad w-full h-full fixed backdrop-blur-lg flex justify-center items-center z-50">
+    <div class="loader"></div>
+</div>
+    <div id="alert-1-acsecc" style="left: -150%;" class="-left-full bg-green-100 before:h-1 before:absolute before:bg-green-500 before:w-0 before:top-0 before:left-0 rounded-b text-teal-900 px-4 py-3 shadow-md fixed z-50 max-lg:top-16" role="alert">
+        <div class="flex">
+          <div class="py-1 pr-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" /></svg>
+          </div>
+          <div>
+            <p class="font-bold">Product added to shopping cart</p>
+            <p class="text-sm">Make sure you know how these changes affect you.</p>
+          </div>
+        </div>
+      </div>
+    <!-- start header -->
+    <header class="header w-full p-6 shadow-sm shadow-gray-600 flex items-center justify-around">
+        <div class="logo">
+            <a href="index.html" class="capitalize font-bold text-2xl text-white cursor-pointer hover:drop-shadow-md shadow-white">mezo market</a>
+        </div>
+        <nav id="navIgation" class="inline-flex gap-2 items-center text-white max-[768px]:left-full max-[768px]:left-0 max-[768px]:flex-col max-[768px]:fixed max-[768px]:top-20 max-[768px]:bg-gray-900 max-[768px]:p-8 max-[768px]:border-y-2 max-[768px]:border-gray-200 max-[768px]:gap-4 max-[768px]:h-2/5 max-[768px]:w-screen max-[768px]:justify-evenly">
+            <a href="index.html" class="capitalize px-5 py-2 font-semibold rounded-full hover:bg-gray-200 hover:text-black ">home</a>
+            <a href="products.html" class="capitalize px-5 py-2 font-semibold rounded-full hover:bg-gray-200 hover:text-black bg-gray-200 text-black">products</a>
+            <a href="contactus.html" class="capitalize px-5 py-2 font-semibold rounded-full hover:bg-gray-200 hover:text-black text-gray-100">contact us</a>
+            <a href="about.html" class="capitalize px-5 py-2 font-semibold rounded-full hover:bg-gray-200 hover:text-black text-gray-100">about us</a>
+        </nav>
+        <div class="shoping-cart-btn relative cursor-pointer ml-8 hover:scale-125 text-white">
+            <span id="countShoppingCart" class="rounded-full w-5 h-5 bg-red-600 flex items-center justify-center absolute -top-3 left-4">0</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" /></svg>                  
+        </div>
+        <button id="menue" class="menue max-[768px]:block hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>              
+        </button>              
+    </header>
+    <!-- end header -->
+    <div class="overlay-1 hidden top-0 left-0 z-20 w-full h-full backdrop-brightness-50 fixed"></div>
+    <!-- start pay popub -->
+    <section id="pay-section" class="hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-6 z-50 bg-gray-700 border border-gray-300 rounded-lg max-[768px]:w-4/5 max-[500px]:w-11/12">
+            <!-- <svg id="close-pay-form" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white absolute right-2 top-2 hover:text-red-600 cursor-pointer duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>              
+        <div class="parent-pop">
+            <form class="flex flex-col gap-4" method="post">
+                <div class="flex gap-1 flex-col">
+                    <label for="card-number" class="text-gray-100">Card Number</label>
+                    <input id="card-number" type="text" placeholder="xxxx xxxx xxxx xxxx" class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full">
+                </div>
+                <div class="flex gap-1 flex-col">
+                    <label for="card-name" class="text-gray-100">Name On Card</label>
+                    <input id="card-name" type="text" placeholder="Name..." class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full">
+                </div>
+                <div class="flex gap-2 items-center">
+                    <div class="flex gap-1 flex-col">
+                        <label for="card-date" class="text-gray-100">date</label>
+                        <input id="card-date" type="text" placeholder="00/20xx" class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full">
+                    </div>
+                    <div class="flex gap-1 flex-col">
+                        <label for="card-security" class="text-gray-100">security code</label>
+                        <input id="card-security" type="text" placeholder="xxx" class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full">
+                    </div>
+                </div>
+                <div class="acess flex gap-1 items-center">
+                    <label for="check-1" class="cursor-pointer text-gray-100" style="text-transform: lowercase !important;">accept all rules</label>
+                    <input type="checkbox" class="cursor-pointer" id="check-1">
+                </div>
+                <div class="flex gap-1">
+                    <button id="checkout" class="text-white font-bold bg-green-600 px-2 py-2 rounded basis-4/5 hover:bg-green-500 border-none">Buy</button>
+                    <div class="total-1 rounded px-2 py-2 border border-gray-500 bg-opacity-40 text-green-500  text-center basis-2/4"></div>
+                </div>
+            </form>
+        </div> -->
+    </section>
+    <!-- end pay popub -->
+    <!-- start shopping cart -->
+    <section class="p-6 w-1/2 max-[1024px]:w-full -right-full bg-gradient-to-t from-gray-700 to-gray-950  z-50 top-0 fixed min-h-screen flex flex-col justify-between h-full" id="shopping-page">
+        <div class="flex flex-col gap-8 h-full">
+        <span class="close rounded-tr-none rounded-br-md block cursor-pointer w-fit absolute top-0 left-0" style="background-color: red !important;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white font-bold"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>              
+        </span>
+        <div class="title">
+            <h1 class="font-bold text-3xl capitalize text-gray-100 text-center">shopping cart</h1>
+        </div>
+        <div class="simple-info w-full flex gap-4 items-center justify-center">
+            <span id="items" class="rounded bg-blue-400 bg-opacity-20 text-white font-bold px-4 py-1.5 basis-1/2 text-center"></span>
+            <span class="rounded bg-green-500 bg-opacity-40 text-white font-bold px-6 pl-9 py-1.5 relative basis-1/2 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute left-1.5 top-1/2 -translate-y-1/2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>                  
+                balance: 0</span>
+            </div>
+            <button onclick=deleteAll(this) id="remove-btn-all" class="text-center flex justify-center items-center rounded-full bg-red-300 bg-opacity-10 py-1.5 px-4 text-red-600 flex items-center gap-1 hover:bg-opacity-30">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-red-600">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                </svg>                          
+                Delete All
+              </button>
+            <div id="parent-scroll" class="overflow-y-scroll" style="height: 555px; overflow-x: hidden !important;">
+
+        </div>
+        <div class="checkout relative bottom-0 ">
+            <div class="prices flex gap-2 flex-col">
+                <div class="flex gap-2 items-center">
+                <div class="price-2-shopping rounded border border-gray-500 py-2 px-2 w-full flex justify-between basis-1/2 items-center">
+                    <span class="bg-sky-400 bg-opacity-30 text-gray-100 px-2 py-1 rounded">price</span>
+                    <span id="prices" class="text-gray-100">0$</span>
+                </div>
+                <div class="sevices rounded border border-gray-500 py-2 px-2 w-full flex justify-between basis-1/2 items-center">
+                    <span class="bg-sky-400 bg-opacity-30 text-gray-100 px-2 py-1 rounded">taxes (+)</span>
+                    <span class="text-gray-100">2%</span>
+                </div>
+            </div>
+            <div class="flex gap-2 items-center">
+                <div class="discount rounded border border-gray-500 py-2 px-2 w-full flex justify-between basis-1/2 items-center">
+                    <span class="bg-sky-400 bg-opacity-30 text-gray-100 px-2 py-1 rounded">discount (-)</span>
+                    <span class="text-gray-100">0$</span>
+                </div>
+                <div class="dis w-full basis-1/2">
+                    <input id="discount-input" class=" py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full" type="text" placeholder="code of discount">
+                </div>
+            </div>
+                <div class="correct hidden">
+                    <span class="corr rounded border border-green-500 w-fit ml-auto text-green-500 px-4 py-1.5 float-right text-sm">code is correct</span>
+                </div>
+            </div>
+            <div class="check flex gap-2 items-center mt-4 max-[768px]:flex-col">
+                <button id="checkout" class="text-white font-bold bg-blue-600 px-2 py-2 rounded basis-4/5 hover:bg-blue-500 max-[768px]:w-full">checkout</button>
+                <div class="total-1 rounded px-2 py-2 border border-gray-500 bg-opacity-40 text-green-500 font-bold text-center basis-2/5 max-[768px]:w-full"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end shopping cart -->
+<!-- start swiper -->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide q">
+            <img src="./images/product-02.jpg" alt="product-as" class="object-cover object-center w-screen" style="height: 55vh;">
+        </div>
+        <div class="swiper-slide q">
+            <img src="./images/product-06.jpg" alt="product-as" class="object-cover object-center w-screen" style="height: 55vh;">
+        </div>
+        <div class="swiper-slide q">
+            <img src="./images/product-07.jpg" alt="product-as" class="object-cover object-center w-screen" style="height: 55vh;">
+        </div>
+                <div class="swiper-slide q">
+                  <img src="./images/product-08.jpg" alt="product-as" class="object-cover object-center w-screen" style="height: 55vh;">
+              </div>
+            </div>
+            <div class="swiper-button-next cus"></div>
+            <div class="swiper-button-prev cus"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+<!-- end swiper -->
+<section class="h-full p-8 flex flex-row-reverse max-[1024px]:flex-col">
+    <aside class="rounded-lg h-full p-4 border border-gray-700 w-1/3 ml-8 max-[1024px]:w-full max-[1024px]:m-auto max-[1024px]:mb-8">
+        <div class="product-image bg-black">
+            <!-- <img class="h-auto max-w-full" src="./images/aside-01.jpg" alt="image description"> -->
+        </div>
+        <div class="any-product flex gap-2 m-3 justify-center items-center transition-none">
+            <!-- <div class="any overflow-hidden rounded-md border-2 border-sky-400 cursor-pointer">
+                <img class="w-20" src="./images/aside-01.jpg" alt="image description">
+            </div>
+            <div class="any overflow-hidden rounded-md border-2 border-gray-500 cursor-pointer">
+                <img class="w-20" src="./images/aside-01.jpg" alt="image description">
+            </div>
+            <div class="any overflow-hidden rounded-md border-2 border-gray-500 cursor-pointer">
+                <img class="w-20" src="./images/aside-01.jpg" alt="image description">
+            </div>
+            <div class="any overflow-hidden rounded-md border-2 border-gray-500 cursor-pointer">
+                <img class="w-20" src="./images/aside-01.jpg" alt="image description">
+            </div> -->
+        </div>
+
+        <div id="titleProduct" class="title m-4 ml-0">
+            
+        </div>
+        <div class="flex flex-col gap-3">
+        <div class="prices p-2 rounded border border-gray-500 flex justify-between items-center ">
+            <p id="priceOfProduct" class="text-white font-bold text-xl">0$</p>
+            <p class="pr rounded-lg bg-green-500 bg-opacity-20 text-gray-100 font-bold w-fit py-1 px-4">price</p>
+        </div>
+        <div class="selected-list ">
+            <select name="select" id="select-1" class="focus:outline-none focus:border-sky-400 border rounded-md bg-gray-700 text-white w-full cursor-pointer uppercase">
+                <option selected value="1" class="uppercase rounded-md bg-slate-500">egp</option>
+                <option value="2" class="uppercase rounded-md bg-slate-500">sar</option>
+                <option value="3" class="uppercase rounded-md bg-slate-500">aed</option>
+                <option value="3" class="uppercase rounded-md bg-slate-500">kwd</option>
+            </select>
+        </div>
+        <div class="result-price p-2 rounded border border-gray-500  flex justify-between items-center">
+            <p id="priceWorld" class="text-gray-100 font-bold text-lg">0$</p>
+            <span class="text-gray-100 font-bold uppercase bg-sky-500 bg-opacity-10 rounded-lg w-fit py-1 px-4" id="price-name">egy</span>
+        </div>
+        <div class="switch-price">
+            <button class="rounded bg-teal-700 w-full justify-center text-center text-gray-100 font-semibold px-6 py-1.5 bg-opacity-30 hover:bg-opacity-100 capitalize relative flex gap-1 items-center " id="test">swith the price<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" /></svg>
+              </button>
+        </div>
+        <div class="buy-now flex justify-between items-center flex-col xl:flex-row gap-2">
+            <button class="xl:w-fit w-full justify-center xl:basis-full rounded bg-sky-500 text-gray-100 font-semibold px-6 py-1.5 bg-opacity-30 hover:bg-opacity-100 capitalize relative flex gap-1 items-center flex-row-reverse" id="add-to-cart">add to cart
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+              </svg>     
+            </button>             
+            <!-- <button class="xl:w-fit w-full rounded xl:flex-1 bg-green-500 text-gray-100 font-semibold px-6 py-1.5 bg-opacity-30 hover:bg-opacity-100 capitalize" id="buy-1">buy</button> -->
+        </div>
+        <div class="title text-gray-200 font-bold text-center text-lg">we accept any pay!</div>
+        <div class="pays flex justify-around items-center">
+            <div class="pay">
+                <img src="./images/pay-01.png" class="w-20 scale-90 hover:scale-110" alt="pay1">
+            </div>
+            <div class="pay">
+                <img src="./images/pay-03.png" class="w-20 scale-90 hover:scale-110" alt="pay-3">
+            </div>
+        </div>
+    </div>
+    </aside>
+        <div id="parent-cards" class="w-full grid gap-6 justify-items-center xl:grid-cols-3 2xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 max-[1024px]:m-auto sm:grid-cols-2">
+
+            </div>
+        </div>
+</section>
+<div class="totop hidden">
+    <button  style=" width: 38px;height: 38px;background: #2196F3;display: flex;align-items: center;justify-content: center;border-radius: 50%;color: #fff;right: 85px;position: fixed;z-index: 100000;border: 2px solid #fff;bottom: 55px;">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" /></svg>          
+    </button>
+</div>
+    <!-- start footer -->
+    <footer class="p-8 flex shadow-md shadow-gray-300 justify-around max-[768px]:flex-col max-[768px]:items-center max-[768px]:gap-6">
+        <div class="text-white capitalize">copy rigth &#x00A9; <span class="font-bold text-sky-400">2023 </span> moaaz tarek</div>
+        <div class="contact text-white capitalize">
+            <span> contact with us: <span class="text-sky-400 pl-1 font-bold">+201010950727</span> &#x1F4F1;</span>
+        </div>
+        <div class="mades text-white capitalize">
+            made by: <span class="pl-1 font-bold text-sky-400">ENG/MOAAZ TAREK</span>
+        </div>
+    </footer>
+    <!-- end footer -->
+<script src="main-02.js"></script>
+<script src="main-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 6500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+</script>
+</body>
+</html>

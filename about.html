@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="https://www.tailwindcss-animated.com/configurator.html?animation=shake&count=infinite">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>About Us</title>
+</head>
+<body class="min-h-screen flex flex-col justify-between about overflow-x-hidden max-[768px]:overflow-x-hidden">
+    <!-- start header -->
+    <header class="header w-full p-6 shadow-sm shadow-gray-600 flex items-center justify-around">
+        <div class="logo">
+            <a href="index.html" class="capitalize font-bold text-2xl text-white cursor-pointer hover:drop-shadow-md shadow-white">mezo market</a>
+        </div>
+        <nav id="navIgation" class="inline-flex gap-2 items-center text-white max-[768px]:left-full max-[768px]:left-0 max-[768px]:flex-col max-[768px]:fixed max-[768px]:top-20 max-[768px]:bg-gray-900 max-[768px]:p-8 max-[768px]:border-y-2 max-[768px]:border-gray-200 max-[768px]:gap-4 max-[768px]:h-2/5 max-[768px]:w-screen max-[768px]:justify-evenly">
+            <a href="index.html" class="capitalize px-5 py-2 font-semibold rounded-full hover:bg-gray-200 hover:text-black ">home</a>
+            <a href="products.html" class="capitalize px-5 py-2 font-semibold rounded-full hover:bg-gray-200 hover:text-black text-gray-100">products</a>
+            <a href="contactus.html" class="capitalize px-5 py-2 font-semibold rounded-full hover:bg-gray-200 hover:text-black text-gray-100">contact us</a>
+            <a href="about.html" class="capitalize px-5 py-2 font-semibold rounded-full hover:bg-gray-200 hover:text-black bg-gray-200 text-black">about us</a>
+        </nav>
+        <button id="menue" class="menue max-[768px]:block hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>              
+        </button>              
+    </header>
+    <!-- end header -->
+    <!-- start writing-effect -->
+        <section class="w-full flex items-center justify-center py-16 relative before:absolute before:left-1/2 before:-translate-x-1/2 before:h-0.5 before:w-48 before:opacity-50 before:bg-gray-400 before:bottom-0">
+            <div class="container flex justify-around max-[768px]:flex-col items-center ">
+                <div class="writing-eff w-full font-bold flex gap-1 text-gray-100 text-3xl items-center relative max-[768px]:w-full max-[768px]:pl-28 max-[768px]:text-2xl max-[500px]:text-xl max-[500px]:pl-12 max-[500px]:w-full max-[400px]:pl-10 ">
+                    <p>Hello,</p>
+                    <p>Iam a </p>
+                    <span id="writer-effect" class="text-indigo-500 before:absolute relative before:border-l-2 before:border-gray-300 before:h-full before:w-full before:left-0 before:top-0 left-0">Freelancer</span></p>
+                </div>
+                <img src="Problem solving-pana.svg" alt="image -1" style="width: 220px;">
+            </div>
+        </section>
+    <!-- end writing-effect -->
+    <!-- start my skills section -->
+    <section class="py-16">
+        <div class="parent-skilll">
+            <div class="title mb-12">
+                <h1 class="font-bold text-gray-100 text-3xl text-center">Our Skills</h1>
+            </div>
+            <div class="boxs-skill flex flex-col content-center w-full flex-wrap gap-6">
+                <div class="box w-full flex flex-col content-center flex-wrap">
+                <div class="title uppercase font-bold text-white mb-2 text-lg flex justify-between items-center">
+                    html
+                    <span id="count-width" class="h-10 w-10 flex items-center justify-around pr-1.5 border border-gray-300 rounded-full mb-2 after:absolute after:right-1 after:content-['%'] relative" style="font-size: 12px;">0</span>
+                </div>
+                <div class="w-2/5 box-shadow bg-gray-950 rounded-full h-3 max-[768px]:w-4/5">
+                    <div id="progress" class="bg-blue-600 h-3 rounded-full text-gray-100 flex items-center justify-center" style="width: 0; transition-duration: 2s; font-size: 10px;" data-width="90%"></div>
+                  </div>
+                </div>
+                <div class="box w-full flex flex-col content-center flex-wrap">
+                    <div class="title uppercase font-bold text-white mb-2 text-lg flex justify-between items-center">
+                        css
+                        <span id="count-width" class="h-10 w-10 flex items-center justify-around pr-1.5 border border-gray-300 rounded-full mb-2 after:absolute after:right-1 after:content-['%'] relative" style="font-size: 12px;">0</span>
+                    </div>
+                <div class="w-2/5 box-shadow bg-gray-950 rounded-full h-3 max-[768px]:w-4/5">
+                    <div id="progress" class="bg-blue-600 h-3 rounded-full text-gray-100 flex items-center justify-center" style="width: 0; transition-duration: 2s; font-size: 10px;" data-width="95%"></div>
+                  </div>
+                </div>
+                <div class="box w-full flex flex-col content-center flex-wrap">
+                    <div class="title uppercase font-bold text-white mb-2 text-lg flex justify-between items-center">
+                        javascript
+                        <span id="count-width" class="h-10 w-10 flex items-center justify-around pr-1.5 border border-gray-300 rounded-full mb-2 after:absolute after:right-1 after:content-['%'] relative" style="font-size: 12px;">0</span>
+                    </div>
+                <div class="w-2/5 box-shadow bg-gray-950 rounded-full h-3 max-[768px]:w-4/5">
+                    <div id="progress" class="bg-blue-600 h-3 rounded-full text-gray-100 flex items-center justify-center" style="width: 0; transition-duration: 2s; font-size: 10px;" data-width="75%"></div>
+                  </div>
+                </div>
+                <div class="box w-full flex flex-col content-center flex-wrap">
+                    <div class="title uppercase font-bold text-white mb-2 text-lg flex justify-between items-center">
+                        tailwind
+                        <span id="count-width" class="h-10 w-10 flex items-center justify-around pr-1.5 border border-gray-300 rounded-full mb-2 after:absolute after:right-1 after:content-['%'] relative" style="font-size: 12px;">0</span>
+                    </div>
+                <div class="w-2/5 box-shadow bg-gray-950 rounded-full h-3 max-[768px]:w-4/5">
+                    <div id="progress" class="bg-blue-600 h-3 rounded-full text-gray-100 flex items-center justify-center" style="width: 0; transition-duration: 2s; font-size: 10px;" data-width="70%"></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end my skills section -->
+    <!-- start footer -->
+    <footer class="p-8 flex shadow-md shadow-gray-300 justify-around max-[768px]:flex-col max-[768px]:items-center max-[768px]:gap-6">
+        <div class="text-white capitalize">copy rigth &#x00A9; <span class="font-bold text-sky-400">2023 </span> moaaz tarek</div>
+        <div class="contact text-white capitalize">
+            <span> contact with us: <span class="text-sky-400 pl-1 font-bold">+201010950727</span> &#x1F4F1;</span>
+        </div>
+        <div class="mades text-white capitalize">
+            made by: <span class="pl-1 font-bold text-sky-400">ENG/MOAAZ TAREK</span>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="main-04.js"></script>
+    <script src="main-nav.js"></script>
+</body>
+</html> 
