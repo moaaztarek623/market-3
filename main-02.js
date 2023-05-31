@@ -524,28 +524,28 @@ function openPayForm() {
   <svg id="close-pay-form" onclick=closePaySection() xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white absolute right-2 top-2 hover:text-red-600 cursor-pointer duration-0"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>              
   <div class="parent-pop">
       <form class="flex flex-col gap-4" onsubmit="return false">
-      <h1 class="font-bold text-center text-gray-100 text-xl">Payment Now!</h1>
+      <h1 class="font-bold text-center text-gray-100 text-xl max-[768px]:text-lg">Payment Now!</h1>
           <div id="parent-input-1" class="flex gap-1 flex-col">
-              <label for="card-number" class="text-gray-100">Card Number</label>
-              <input id="card-number" oninput=switchInput_1() type="text" placeholder="xxxx xxxx xxxx xxxx" max="19" class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full">
+              <label for="card-number" class="text-gray-100  max-[768px]:text-sm">Card Number</label>
+              <input id="card-number" oninput=switchInput_1() type="text" placeholder="xxxx xxxx xxxx xxxx" max="19" class="mt-1 py-1.5 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full">
           </div>
           <div id="parent-input-2" class="flex gap-1 flex-col">
-              <label for="card-name" class="text-gray-100">Name On Card</label>
-              <input id="card-name" type="text" placeholder="Name..." class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full">
+              <label for="card-name" class="text-gray-100 max-[768px]:text-sm">Name On Card</label>
+              <input id="card-name" type="text" placeholder="Name..." class="mt-1 py-1.5 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full">
           </div>
           <div id="parent-input-3" class="flex gap-2 items-center max-[768px]:gap-4 max-[768px]:flex-col ">
               <div class="flex gap-1 flex-col max-[768px]:w-full">
-                  <label for="card-date" class="text-gray-100">date</label>
-                  <input id="card-date" oninput=switchInput_2() type="text" placeholder="xx/xx" max="5" class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full">
+                  <label for="card-date" class="text-gray-100 max-[500px]:text-sm">date</label>
+                  <input id="card-date" oninput=switchInput_2() type="text" placeholder="xx/xx" max="5" class="mt-1 py-1.5 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full">
               </div>
               <div id="parent-input-4" class="flex gap-1 flex-col max-[768px]:w-full">
-                  <label for="card-security" class="text-gray-100">security code</label>
-                  <input id="card-security" oninput=switchInput_2() type="text" placeholder="xxx" max="3" class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full">
+                  <label for="card-security" class="text-gray-100 max-[500px]:text-sm">security code</label>
+                  <input id="card-security" oninput=switchInput_2() type="text" placeholder="xxx" max="3" class="mt-1 py-1.5 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full">
               </div>
           </div>
           <div id="parent-input-5" class="acess flex gap-1 items-center max-[500px]:flex-col">
               <div>
-                  <label for="check-1" class="cursor-pointer text-gray-100" style="text-transform: lowercase !important;">accept all rules</label>
+                  <label for="check-1" class="cursor-pointer text-gray-100 max-[500px]:text-sm" style="text-transform: lowercase !important;">accept all rules</label>
                   <input type="checkbox" class="cursor-pointer" id="check-1">
               </div>
           </div>
@@ -619,56 +619,56 @@ function buyThis() {
     }
     if (document.querySelector('#card-name').value == '') {
         document.querySelector('#parent-input-2').innerHTML = `
-        <label for="card-name" class="text-gray-100">Name On Card</label>
+        <label for="card-name" class="text-gray-100 max-[768px]:text-sm">Name On Card</label>
         <span class="text-red-600 text-sm">field this name please try again!</span>
-        <input id="card-name" type="text" placeholder="Name..." class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full border-red-600" value=${document.querySelector('#card-name').value}>
+        <input id="card-name" type="text" placeholder="Name..." class="mt-1 max-[768px]:py-1.5 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full border-red-600" value=${document.querySelector('#card-name').value}>
       `
     }else {
       document.querySelector('#parent-input-2').innerHTML = `
-      <label for="card-name" class="text-gray-100">Name On Card</label>
-      <input id="card-name" type="text" placeholder="Name..." class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full" value=${document.querySelector('#card-name').value}>
+      <label for="card-name" class="text-gray-100 max-[768px]:text-sm">Name On Card</label>
+      <input id="card-name" type="text" placeholder="Name..." class="mt-1 max-[768px]:py-1.5 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full" value=${document.querySelector('#card-name').value}>
     `
     }
     if (input1 == false){
         document.querySelector('#parent-input-1').innerHTML = `
-          <label for="card-number" class="text-gray-100">Card Number</label>
+          <label for="card-number" class="text-gray-100 max-[768px]:py-1.5">Card Number</label>
           <span class="text-red-600 text-sm">field this card please try again!</span>
-          <input id="card-number" oninput=switchInput_1() type="text" placeholder="xxxx xxxx xxxx xxxx" max="19" class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full border-red-600" value=${document.querySelector('#card-number').value}>
+          <input id="card-number" oninput=switchInput_1() type="text" placeholder="xxxx xxxx xxxx xxxx" max="19" class="mt-1 max-[768px]:py-1.5 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full border-red-600" value=${document.querySelector('#card-number').value}>
           `
     }
       if (input2 == false) {
         document.querySelector('#parent-input-3').innerHTML = `        
         <div class="flex gap-1 flex-col">
-        <label for="card-date" class="text-gray-100">date</label>
-        <input id="card-date" oninput=switchInput_2() type="text" placeholder="xx/xx" max="5" class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full border-red-600">
+        <label for="card-date" class="text-gray-100 max-[768px]:text-sm">date</label>
+        <input id="card-date" oninput=switchInput_2() type="text" placeholder="xx/xx" max="5" class="mt-1 max-[768px]:py-1.5 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full border-red-600">
     </div>
     <div id="parent-input-4" class="flex gap-1 flex-col">
-        <label for="card-security" class="text-gray-100">security code</label>
-        <input id="card-security" oninput=switchInput_2() type="text" placeholder="xxx" max="3" class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full">
+        <label for="card-security" class="text-gray-100 max-[768px]:text-sm">security code</label>
+        <input id="card-security" oninput=switchInput_2() type="text" placeholder="xxx" max="3" class="mt-1 py-3  max-[768px]:py-1.5 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full">
     </div>
         `
     }
       if (input3 == false ) {
         document.querySelector('#parent-input-3').innerHTML = `        
         <div class="flex gap-1 flex-col max-[768px]:w-full">
-        <label for="card-date" class="text-gray-100">date</label>
-        <input id="card-date" oninput=switchInput_2() type="text" placeholder="xx/xx" max="5" class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full ">
+        <label for="card-date" class="text-gray-100 max-[768px]:text-sm">date</label>
+        <input id="card-date" oninput=switchInput_2() type="text" placeholder="xx/xx" max="5" class="mt-1 max-[768px]:py-1.5 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full ">
     </div> 
     <div id="parent-input-4" class="flex gap-1 flex-col max-[768px]:w-full">
-        <label for="card-security" class="text-gray-100">security code</label>
-        <input id="card-security" oninput=switchInput_2() type="text" placeholder="xxx" max="3" class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full border-red-600">
+        <label for="card-security" class="text-gray-100 max-[768px]:text-sm">security code</label>
+        <input id="card-security" oninput=switchInput_2() type="text" placeholder="xxx" max="3" class="mt-1 max-[768px]:py-1.5 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full border-red-600">
     </div>
     `
     }
     if (input2 == false && input3 == false) {
       document.querySelector('#parent-input-3').innerHTML = `        
       <div class="flex gap-1 flex-col max-[768px]:w-full">
-      <label for="card-date" class="text-gray-100">date</label>
-      <input id="card-date" oninput=switchInput_2() type="text" placeholder="xx/xx" max="5" class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full border-red-600">
+      <label for="card-date" class="text-gray-100 max-[768px]:text-sm">date</label>
+      <input id="card-date" oninput=switchInput_2() type="text" placeholder="xx/xx" max="5" class="mt-1 py-3 max-[768px]:py-1.5 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full border-red-600">
   </div>
   <div id="parent-input-4" class="flex gap-1 flex-col max-[768px]:w-full">
-      <label for="card-security" class="text-gray-100">security code</label>
-      <input id="card-security" oninput=switchInput_2() type="text" placeholder="xxx" max="3" class="mt-1 py-3 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full border-red-600">
+      <label for="card-security" class="text-gray-100 max-[768px]:text-sm">security code</label>
+      <input id="card-security" oninput=switchInput_2() type="text" placeholder="xxx" max="3" class="mt-1 py-3 max-[768px]:py-1.5 px-2 rounded border border-gray-500 bg-gray-900 bg-opacity-10 text-white caret-gray-100 w-full border-red-600">
   </div>
   `
     }
@@ -676,7 +676,7 @@ function buyThis() {
     if (document.querySelector('#check-1').checked != true) {
       document.querySelector('#parent-input-5').innerHTML = `
       <div>
-          <label for="check-1" class="cursor-pointer text-gray-100" style="text-transform: lowercase !important;">accept all rules</label>
+          <label for="check-1" class="cursor-pointer text-gray-100 max-[768px]:text-sm" style="text-transform: lowercase !important;">accept all rules</label>
           <input type="checkbox" class="cursor-pointer" id="check-1">
       </div>
       <span class="text-red-600 text-sm">check this to accept pay</span>

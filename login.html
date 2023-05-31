@@ -34,24 +34,24 @@
         <div class="container m-auto flex justify-center">
             <div class="forms w-4/5 flex flex-col gap-5 p-4 flex-wrap rounded-xl box-shadow basis-1/2" style="align-content: center;">
                 <div class="pa flex justify-center items-center">
-                    <div class="title-1 text-center text-white font-bold text-3xl uppercase px-2 py-1 items-center flex justify-center w-fit dark:text-sky-400" style="letter-spacing: 1.5px;">Sign in</div>
+                    <div class="title-1 text-center font-bold text-3xl uppercase px-2 py-1 items-center flex justify-center w-fit text-sky-400 max-[768px]:text-2xl" style="letter-spacing: 1.5px;">Sign in</div>
                 </div>
                 <div class="form gap-1 flex flex-col w-full">
-                    <label for="name-1" class="font-semibold text-gray-100">your email</label>
-                    <input type="email" id="name-1" class="rounded text-white focus:border-gray-950 bg-transparent border border-gray-500 ">
+                    <label for="name-1" class="font-semibold text-gray-100 max-[768px]:text-sm">your email</label>
+                    <input type="email" id="name-1" class="rounded text-white focus:border-gray-600 bg-transparent border border-gray-500 ">
                 </div>
                 <div class="form gap-1 flex flex-col w-full relative">
-                    <label for="name-1" class="font-semibold text-gray-100">your password</label>
+                    <label for="name-1" class="font-semibold text-gray-100 max-[768px]:text-sm">your password</label>
                     <div class="svg absolute right-2 bottom-2 cursor-pointer" onclick="show_hide()">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-200">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>  
                       </div>
-                    <input type="password" id="pass-1" class="rounded text-white focus:border-gray-950 bg-transparent border border-gray-500">
+                    <input type="password" id="pass-1" class="rounded text-white focus:border-gray-600 bg-transparent border border-gray-500">
                 </div>
                 <div class="submit flex flex-row items-center justify-center gap-3 w-full">
-                    <button type="button" class="capitalize ext-whit hover:bg-green-700 bg-green-600 text-gray-100 hover:bg-gradient-to-br basis-full shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">login</button>
+                    <button type="button" class="capitalize ext-whit hover:bg-green-700 bg-green-600 text-gray-100 hover:bg-gradient-to-br basis-full shadow-lg shadow-green-500/50 shadow-lg shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">login</button>
                     <span class="text-gray-100 text-lg pb-2">or</span>
                     <button type="button" onclick="location.href='register.html'" class="capitalize ext-whit hover:bg-gray-200 hover:text-black hover:border-transparent text-gray-100 shadow-lg border border-gray-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">register</button>
                 </div>
@@ -60,11 +60,11 @@
     </section>
     <!-- start footer -->
     <footer class="p-8 flex shadow-md shadow-gray-300 justify-around max-[768px]:flex-col max-[768px]:items-center max-[768px]:gap-6">
-        <div class="text-white capitalize">copy rigth &#x00A9; <span class="font-bold text-sky-400">2023 </span> moaaz tarek</div>
+        <div class="text-white capitalize  max-[768px]:text-sm">copy rigth &#x00A9; <span class="font-bold text-sky-400">2023 </span> moaaz tarek</div>
         <div class="contact text-white capitalize">
-            <span> contact with us: <span class="text-sky-400 pl-1 font-bold">+201010950727</span> &#x1F4F1;</span>
+            <span class=" max-[768px]:text-sm"> contact with us: <span class="text-sky-400 pl-1 font-bold">+201010950727</span> &#x1F4F1;</span>
         </div>
-        <div class="mades text-white capitalize">
+        <div class="mades text-white capitalize max-[768px]:text-sm">
             made by: <span class="pl-1 font-bold text-sky-400">ENG/MOAAZ TAREK</span>
         </div>
     </footer>
