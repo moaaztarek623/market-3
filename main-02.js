@@ -403,7 +403,7 @@ fetch("main.json").then((ele) => {
                     <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded bg-blue-200 text-blue-800 ml-3"  id="number-off-stars">${result.items[i].fields.numOfStar}.0</span>
                 </div>
                 <div class="flex items-center justify-between mt-2">
-                    <span class="text-2xl font-bold text-gray-900 text-white">${result.items[i].fields.price}$</span>
+                    <span class="text-2xl font-bold text-white">${result.items[i].fields.price}$</span>
                     <button id="show" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">Show</button>
                 </div>
             </div>
